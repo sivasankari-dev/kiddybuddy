@@ -12,10 +12,10 @@
         "image" : "../assets/colorrings.jpg" 
     },
     {
-        "name" : "Hop Stick", 
+        "name" : "Alphabet Sorter", 
         "desc" : "Kids Color Stacker Shape Sorter Gift Educational Learning Toy for 1 2 3 Years Old Boys and Girls",
-        "price" : "₹ 399",
-        "image" : "../assets/hopstick.jpg" 
+        "price" : "₹ 250",
+        "image" : "../assets/alphabetsorter.jpg" 
     },
     {
         "name" : "Wooden Alphabet", 
@@ -26,12 +26,12 @@
     {
         "name" : "Pull Back Toys", 
         "desc" : "Kids Color Stacker Shape Sorter Gift Educational Learning Toy for 1 2 3 Years Old Boys and Girls",
-        "price" : "₹ 210",
+        "price" : "₹ 270",
         "image" : "../assets/pullbacktoy.jpg" 
     },   {
-        "name" : "Wooden Alphabet", 
+        "name" : "Hop Stick", 
         "desc" : "Kids Color Stacker Shape Sorter Gift Educational Learning Toy for 1 2 3 Years Old Boys and Girls",
-        "price" : "₹ 210",
-        "image" : "../assets/woodenalphabet.jpg" 
+        "price" : "₹ 399",
+        "image" : "../assets/hopstick.jpg" 
     }
 ]
