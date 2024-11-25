@@ -1,9 +1,10 @@
 import React from "react";
+import '../style/ToyCard.css';
 
 //const bannerData = require("../data/bannerdata.json")
 const jsonData = require("../data/carddata.json")
 
-const Home = (props) => {
+const ToyCard = (props) => {
 
     // const banner = (bannerData && bannerData.length > 0) && bannerData.map(function(item,index){
     //     return <div className="banner-card">
@@ -14,7 +15,7 @@ const Home = (props) => {
 
 const data = (jsonData && jsonData.length > 0) && jsonData.map(function(item,index){
     return <div className="img-card">
-        <img src = {item.image} alt = "Shape Stacker" ></img>
+        <img src = {`./assets/${item.image}`} alt = {item.alt} ></img>
         <h3>{item.name}</h3>
         <h4>{item.price}</h4>
         <button className="btn" >Add to Cart</button>
@@ -30,4 +31,4 @@ return (
 );
 }
 
-export default Home;
+export default ToyCard;

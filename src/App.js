@@ -1,12 +1,12 @@
-//import logo from './logo.svg';
 import './App.css';
-import Home from './components/Home';
+import NavBar from './components/NavBar';
+import ToyCard from './components/ToyCard';
 
 
 function App() {
   return (
     <div className="App">
-       <nav>
+        {/* <nav>
         <h1 className='brandname'>Kidzone</h1>
         <div className='headerlist'>
         <ul>
@@ -21,9 +21,12 @@ function App() {
           </li>
         </ul>
         </div>
-       </nav>
-       <div className='Homeapp'>
-          <Home/>
+       </nav>  */}
+       <div className='Header'>
+          <NavBar/>
+       </div>
+       <div className='Card'>
+          <ToyCard/>
        </div>
      </div>
   );

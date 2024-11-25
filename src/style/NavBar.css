@@ -1,0 +1,29 @@
+nav{
+    background-color:#004aad;
+    color:white;
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+  }
+  
+  .brandname{
+    font-size: 50px;
+    font-style: oblique;
+    margin-right: 50%;
+  }
+  
+  ul{
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Align items inside the ul horizontally */
+  }
+  
+  li{
+    margin-left: 30%;
+  }
+  
+  .icon:hover{
+    color: #ffd000;
+    transform: scale(1.5);
+  }
