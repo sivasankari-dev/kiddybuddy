@@ -1,6 +1,8 @@
 import './App.css';
 import NavBar from './components/NavBar';
+import SliderBanner from './components/SliderBanner';
 import ToyCard from './components/ToyCard';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -9,9 +11,11 @@ function App() {
        <div className='Header'>
           <NavBar/>
        </div>
+       <div className='Banner'><SliderBanner/></div>
        <div className='Card'>
           <ToyCard/>
        </div>
+       <div className='Footer'><Footer/></div>
      </div>
   );
 }

@@ -1,14 +1,14 @@
-nav{
+/* nav{
     background-color:#004aad;
     color:white;
     padding: 10px;
     display: flex;
-    justify-content: center; /* Center horizontally */
+    justify-content: center; 
     align-items: center;
   }
   
   .brandname{
-    font-size: 50px;
+    font-size: 40px;
     font-style: oblique;
     margin-right: 50%;
   }
@@ -16,14 +16,257 @@ nav{
   ul{
     list-style: none;
     display: flex;
-    justify-content: center; /* Align items inside the ul horizontally */
+    justify-content: center; 
   }
   
   li{
     margin-left: 30%;
   }
   
-  .icon:hover{
-    color: #ffd000;
-    transform: scale(1.5);
+  .icon{
+    font-size: 25px;
+    &:hover{
+      color: #ffd000;
+      transform: scale(1.5);
+    }
   }
+   */
+  /* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+/* box-sizing: border-box;*/
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 125px;
+  background-color: #3BC3DF;
+  color: white;
+  position: relative;
+}
+
+.burger-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.burger-icon .line {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+/* Logo */
+.logo h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* Search Bar */
+.search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 8px 35px 8px 10px; /* Adjust padding for better input size and spacing */
+  border-radius: 5px;
+  border: none;
+  width: 700px; /* Longer search bar */
+  font-size: 14px;
+  height: 25px; /* Ensure input height is consistent */
+}
+
+.search-bar input::placeholder {
+  color: #c0beb4; /* Change to any color you want */
+  opacity: 1; /* Optional, ensures the color is not faded */
+}
+
+.search-bar input:focus {
+  outline: none; /* Removes the outline */
+  border: none;  /* Removes the border */
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%); /* Center the icon vertically */
+  font-size: 18px;
+  color: #3BC3DF;
+  background-color: white;
+  width: 20px; /* Match the height of the input field */
+  height: 20px; /* Match the height of the input field */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Icons Section */
+.icons {
+  display: flex;
+  gap: 20px;
+}
+
+.icon {
+  cursor: pointer;
+  font-size: 25px;
+  &:hover{
+    color: #FFDB22;
+    transform: scale(1.2);
+  }
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: #3BC3DF;
+  padding: 10px;
+}
+
+.mobile-menu.open {
+  display: block;
+}
+
+.mobile-menu-item {
+  padding: 15px;
+  border-bottom: 1px solid #666;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.mobile-menu-item:hover {
+  background-color: #555;
+}
+
+/* Styles for the menu below the navbar */
+.menu {
+  background-color: white; /* Darker background for the menu */
+  padding: 5px 0;
+  text-align: center;
+  font-size: 40px;
+}
+
+.menu-items {
+  display: flex; /* Arrange menu items horizontally */
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.menu-item {
+  padding: 5px 50px;
+  color: #3BC3DF;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  color:#FFDB22
+}
+
+/* Dropdown Menu Styles */
+.dropdown {
+  position: relative;
+  padding: 5px 20px;
+}
+
+.dropdown:hover {
+  background-color: #3BC3DF;
+  color: white;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%; /* Position the dropdown below the "Brands" menu item */
+  left: 0;
+  background-color: white;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+  width: 200px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: solid;
+  border-color: #ffda24;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block; /* Make dropdown visible on hover */
+}
+
+.dropdown-item {
+  padding: 10px;
+  color: #3BC3DF;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  color: #FFDB22;
+}
+
+/* Style for the Dropdown Icon (Chevron) */
+.dropdown-icon {
+  font-size: 7px;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* Rotate the icon when the menu is open */
+.dropdown-icon.rotate {
+  transform: rotate(180deg);
+}
+
+/* Mobile Layout for the menu */
+@media (max-width: 768px) {
+  .menu {
+    display: none; /* Hide this menu on mobile */
+  }
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .burger-icon {
+    display: flex;
+  }
+
+  .search-bar input {
+    display: none;
+  }
+
+  .icons {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo h1 {
+    font-size: 20px;
+  }
+}

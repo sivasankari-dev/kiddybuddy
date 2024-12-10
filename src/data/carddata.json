@@ -33,11 +33,28 @@
         "desc" : "Kids Color Stacker Shape Sorter Gift Educational Learning Toy for 1 2 3 Years Old Boys and Girls",
         "price" : "₹ 270",
         "image" : "pullbacktoy.jpg" 
-    },   {
+    },  
+    
+    {
         "name" : "Hop Stick", 
         "alt" : "Hop Stick", 
         "desc" : "Kids Color Stacker Shape Sorter Gift Educational Learning Toy for 1 2 3 Years Old Boys and Girls",
         "price" : "₹ 399",
         "image" : "hopstick.jpg" 
+    },
+
+    {
+        "name" : "Slide Puzzle", 
+        "alt" : "Slide Puzzle", 
+        "desc" : "Kids Color Stacker Shape Sorter Gift Educational Learning Toy for 1 2 3 Years Old Boys and Girls",
+        "price" : "₹ 299",
+        "image" : "slidepuzzle.jpg" 
+    },
+    {
+        "name" : "Building Blocks", 
+        "alt" : "Building Blocks", 
+        "desc" : "Kids Color Stacker Shape Sorter Gift Educational Learning Toy for 1 2 3 Years Old Boys and Girls",
+        "price" : "₹ 349",
+        "image" : "buildingblocks.jpg" 
     }
 ]

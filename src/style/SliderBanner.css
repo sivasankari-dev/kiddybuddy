@@ -1,0 +1,41 @@
+/* Slider Container */
+.slider {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin-top: 10px;
+  }
+  
+  /* Slider Image */
+  .slider-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+  }
+  
+  /* Buttons (Previous and Next) */
+  .slider-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+  
+  .prev-button,
+  .next-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .prev-button:hover,
+  .next-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
