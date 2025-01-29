@@ -4,10 +4,11 @@ import '../style/SliderBanner.css'; // Import the CSS for slider styling
 const SliderBanner = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const images = [
-    `./toyshop_main_banner_2000x667.jpg`, // Replace with actual image URLs
-    `./Nerf-Banner-Desktop.jpg`,
-    `./kidsfashionoffer.png`,
-    `./magiccar.jpg`,
+    require('../assets/slider/toysoffer.jpg'), // Replace with actual image URLs
+    require('../assets/slider/fashionoffer.jpg'),
+    require('../assets/slider/bathcareoffer.jpg'),
+    require('../assets/slider/spiritofindia.jpg'),
+    require('../assets/slider/diapersoffer.png'),
   ];
 
   // Handle next slide

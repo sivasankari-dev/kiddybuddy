@@ -4,7 +4,6 @@ import SliderBanner from './components/SliderBanner';
 import ToyCard from './components/ToyCard';
 import Footer from './components/Footer';
 
-
 function App() {
   return (
     <div className="App">
@@ -13,8 +12,8 @@ function App() {
        </div>
        <div className='Banner'><SliderBanner/></div>
        <div className='Card'>
-          <ToyCard/>
-       </div>
+            <ToyCard />
+        </div>
        <div className='Footer'><Footer/></div>
      </div>
   );

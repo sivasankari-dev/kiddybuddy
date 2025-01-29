@@ -15,7 +15,7 @@ const ToyCard = (props) => {
 
 const data = (jsonData && jsonData.length > 0) && jsonData.map(function(item,index){
     return <div className="img-card">
-        <img src = {`./assets/${item.image}`} alt = {item.alt} ></img>
+        <img src = {require(`../assets/toys/${item.image}`)} alt = {item.alt} ></img>
         <h3>{item.name}</h3>
         <h4>{item.price}</h4>
         <button className="btn" >Add to Cart</button>

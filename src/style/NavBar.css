@@ -47,10 +47,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 125px;
+  padding: 5px 150px;
   background-color: #3BC3DF;
   color: white;
   position: relative;
+  height: 50px;
 }
 
 .burger-icon {
@@ -68,9 +69,13 @@ body {
 }
 
 /* Logo */
+
 .logo h1 {
-  font-size: 40px;
+  font-family: cursive;
+  font-size: 45px;
   font-weight: bold;
+  line-height: 50px;
+  padding-bottom: 10px;
 }
 
 /* Search Bar */
@@ -119,6 +124,7 @@ body {
 .icons {
   display: flex;
   gap: 20px;
+  padding-top: 5px;
 }
 
 .icon {
@@ -171,6 +177,7 @@ body {
   padding: 0;
   margin: 0;
   list-style-type: none;
+  padding-top:10px;
 }
 
 .menu-item {
@@ -181,7 +188,7 @@ body {
 }
 
 .menu-item:hover {
-  color:#FFDB22
+   color:#FFDB22 
 }
 
 /* Dropdown Menu Styles */

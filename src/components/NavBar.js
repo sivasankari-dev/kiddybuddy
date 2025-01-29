@@ -52,22 +52,25 @@ const NavBar = () => {
          <div className="menu">
         <ul className="menu-items">
           <li className="menu-item">Login</li>
-          <li className="menu-item">Winter sale</li>
-          <li className="menu-item dropdown"
+          {/* <li className="menu-item">Winter sale</li> */}
+          {/* <li className="menu-item dropdown"
             onMouseEnter={handleDropdownToggle}
             onMouseLeave={handleDropdownToggle}>Brands
             {/* <FaChevronDown className={`dropdown-icon ${isMenuOpen ? 'rotate' : ''}`} /> */}
             {/* Dropdown Menu */}
-            <ul className= {`dropdown-menu ${isDropdownOpen ? 'show' : ''}`}>
+            {/* <ul className= {`dropdown-menu ${isDropdownOpen ? 'show' : ''}`}>
               <li className="dropdown-item">Brand 1</li>
               <li className="dropdown-item">Brand 2</li>
               <li className="dropdown-item">Brand 3</li>
               <li className="dropdown-item">Brand 4</li>
-            </ul></li>
-          <li className="menu-item">Category</li>
-          <li className="menu-item">Age-wise</li>
-          <li className="menu-item">Bulkorder</li>
-          <li className="menu-item">Giftcards</li>
+            </ul></li> } */}
+          <li className="menu-item">Toys</li>
+          <li className="menu-item">Fashion</li>
+          <li className="menu-item">Diapering</li>
+          <li className="menu-item">Bathcare</li>
+          {/* <li className="menu-item">Age-wise</li> */}
+          {/* <li className="menu-item">Bulkorder</li> */}
+          {/* <li className="menu-item">Giftcards</li> */}
           <li className="menu-item">About Us</li>
           <li className="menu-item">Contact Us</li>
         </ul>
